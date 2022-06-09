@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: "MB Before the End";
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: "Bigshot one";
+}
+header{
+    background-color: rgb(27, 27, 27);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+}
+.conteiner{
+    position: relative;
+    max-width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_navigation{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 132px;
+    height: 56px;
+}
+.navigation{
+    margin-left: 10px;
+}
+.navigation .select{
+    position: relative;
+}
+.navigation .select::before{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: -8px;
+    background-image: url('../img/png/select.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 110%;
+    height: 10px;
+    transform: rotate(-2deg);
+}
+.navigation a{
+    color: red;
+    margin-left: 40px;
+    font-size: 24px;
+}
+.menu:hover{
+    cursor: pointer;
+}
+.nav_user{
+    opacity: 0;
+    height: 0px;
+    position: absolute;
+    right: 0px;
+    background-color: rgb(27, 27, 27);
+    width: 200px;
+    padding: 30px;
+    top: 70px;
+    padding-top: 0px;
+    transition: 1s ease;
+    font-size: 0px;
+}
+
+.nav_user a{
+    color: red;
+}
+
+.visible{
+    opacity: 1;
+    height: 150px;
+    transition: 1s ease;
+    font-size: 28px;
+}
+.navigation_mobile{
+    margin-top: 30px;
+    display: none;
+    flex-direction: column;
+}
+.navigation_mobile a{
+    margin-bottom: 20px;
+}
+.user a{
+    display: block;
+    margin-bottom: 30px;
+}
+.user{
+    margin-top: 30px;
+}
+@media screen and (max-width:768px) {
+    .logo{
+        width: 110px;
+        height: 50px;
+    }
+    .navigation a{
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .navigation .select::before{
+        left: -4px;
+        top: 20px;
+        width: 110%;
+    }
+    .menu{
+        display: block;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .visible{
+        height: 450px;
+        width: 100%;
+    }
+    .visible a{
+        font-size: 36px;
+    }
+    .navigation_mobile{
+        display: flex;
+    }
+    .navigation{
+        display: none;
+    }
+}

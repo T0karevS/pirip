@@ -1,0 +1,289 @@
+*
+{
+  box-sizing: border-box;
+  
+}
+body
+{
+  margin-top: 100px;
+  padding: 0;
+  font-family: "MB Before the End";
+  font-weight: 400;
+}
+section
+{
+  padding-top: 120px;
+  max-width: 1700px;
+  margin: auto;
+  
+}
+.container{
+  
+  background-image: url(../img/png/bgreg.png);
+  background-repeat: no-repeat;
+  background-size: 98%;
+  max-width: 1420px;
+  padding: 30px 10px;
+  margin: 0 auto;
+
+}
+.registration__title{
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  color: #FFFFFF;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+.registration__inner{
+  display: flex;
+  justify-content: space-around;
+}
+.registration__item{
+  max-width: 715px;
+
+}
+
+.registration__item-content{
+  width: 1000px;
+  position: relative;
+  background-color: none;
+  background: center/100%;
+  background-image: url(../img/png/input.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-left: 120px;
+ 
+}
+.registration__item-input{
+  box-sizing: border-box;
+  width: 700px;
+  height: 40px;
+  line-height: 38px;
+  border: none;
+  background: none;
+  font-family: "MB Before the End";
+  font-size: 36px;
+  margin: 50px 0 50px 100px;
+  color: red;
+  outline: none;
+  border-bottom: 1px solid red;
+}
+.registration__item-input::placeholder{
+  z-index: 5;
+  color: red;
+  font-family: "MB Before the End";
+  font-weight: 400;
+  font-size: 36px;
+}
+.registration__item-content::before{
+  content: "";
+  background-image: url(../img/png/input.png);
+  width: 713px;
+  height: 167px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.checkbox__inner
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px;
+
+}
+.checkbox__input
+{
+  
+  height: 35px;
+  width: 35px;
+  background-color: #eee;  
+}
+.checkbox__text
+{
+  font-family: "MB Before the End";
+  font-size: 32px;
+  margin-left: 25px;
+  width: 330px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+.checkbox
+{
+  display: inline-flex;
+  align-items: center;
+}
+.buy
+{
+    width: 290px;
+    height: 300px;
+    margin-left: 70%;
+    margin-top: -200px;
+    background-image: url(../img/svg/btn.svg);
+    background-repeat: no-repeat;
+    background-color: unset;
+    background-position: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: "MB Before the End";  
+    font-size: 36px;
+    text-align: center;
+}
+footer
+{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+}
+.socials
+{
+    display: flex;
+    flex-direction: column;
+}
+.socialimg
+{
+    width: 35px;
+    height: 32px;
+    float: left;
+}
+.sobakaname
+{
+    width: 70%;
+    margin-left: 40px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+.divsoc
+{
+    margin-bottom: 10px;
+}
+.adres
+{
+    width: 200px;
+    height: 190px;
+    padding-top: 20px;
+    margin-left: -100px;
+}
+.divsoc2 p
+{
+    height: 32px;
+    margin:  0 8px 10px 0 ;
+    line-height: 32px;
+}
+@media screen and (max-width:768px)
+{
+  .registration
+  {
+    width: 768px;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .container
+  {
+    background-image: url(../img/svg/bgadapt2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1200px;
+    width: 768px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    
+  }
+  .checkbox__inner
+  {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .buy
+  {
+    margin-top: -50px;
+    margin-left: 0px;
+  }
+  .registration__title
+  {
+    margin-top: 70px;
+    margin-left: 0px;
+  }
+  .registration__item-content
+  {
+    max-width: 650px;
+  }
+  .registration__item-input
+  {
+    box-sizing: border-box;
+    width: 450px;
+    height: 40px;
+    line-height: 38px;
+    border: none;
+    background: none;
+    font-family: "MB Before the End";
+    font-size: 36px;
+    margin: 43px 0 50px 31px;
+    color: red;
+    outline: none;
+    border-bottom: 1px solid red;
+  }
+}
+@media screen and (max-width:375px)
+{
+  .container
+  {
+    background-image: url(../img/svg/bgadapt3.svg);
+    max-width: 375px;
+    margin: 0px;
+    padding: 0px;  
+    height: 800px; 
+  }
+  .registration__item-input {
+    box-sizing: border-box;
+    width: 190px;
+    height: 16px;
+    line-height: 18px;
+    border: none;
+    background: none;
+    font-family: "MB Before the End";
+    font-size: 18px;
+    margin: 30px 0 30px -30px;
+    color: red;
+    outline: none;
+    border-bottom: 1px solid red;
+  }
+  .registration__item-content
+  {
+    font-size: 18px;
+    max-width: 300px;
+    margin-left: 25px;
+  }
+  .registration__item-input::placeholder{
+    z-index: 5;
+    color: red;
+    font-family: "MB Before the End";
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .checkbox
+  {
+    max-width: 275px;
+  }
+  .checkbox__text
+  {
+    font-size: 18px;
+  }
+  .buy
+  {
+    margin-top: 20px;
+    margin-left: 12px;
+    height: 100px;
+  }
+
+}

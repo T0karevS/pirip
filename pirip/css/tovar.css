@@ -1,0 +1,259 @@
+.container_tovar
+{
+    background-image: url(../img/svg/background.svg);
+    height: 978px;
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-position: top center;
+    width: 100%;
+
+}
+.picture
+{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 110px;
+    margin-left: 10%;
+}
+.arrows
+{
+    margin: 20px;
+}
+.cap
+{
+    width: 35%;
+}
+.name
+{
+    
+    font-family: "MB Before the End";  
+    color: white;
+    font-size: 64px;
+    margin: 0px;
+}
+.description
+{
+    display: flex;
+    margin-left: 100px;
+    color: white;
+    flex-direction: column;
+}
+.description p
+{
+    
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: "MB Before the End";
+}
+.btn
+{
+    text-align: center;
+    background-position: center;
+    background-image: url(../img/svg/btn.svg);
+    background-color: unset;
+    outline: none;
+    border: none;
+    height: 100px;
+    background-repeat: no-repeat;
+    width: 300px;
+    cursor: pointer;
+    color: white;
+    font-family: "MB Before the End";  
+    font-size: 36px;
+    margin-top: 20px;
+}
+.useless_data
+{
+    padding-top: 25px;
+    color: white;
+    font-family: "MB Before the End";
+    margin: auto;
+    width: 80%;
+    font-size: 36px;
+}
+.back
+{
+  display: flex;
+    width: 290px;
+    height: 192px;
+    margin-left: 75%;
+    margin-top: -200px;
+    background-image: url(../img/svg/btn.svg);
+    background-repeat: no-repeat;
+    background-color: unset;
+    background-position: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: "MB Before the End";  
+    font-size: 36px;
+    text-align: center;
+}
+footer
+{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+}
+.socials
+{
+    display: flex;
+    flex-direction: column;
+}
+.socialimg
+{
+    width: 35px;
+    height: 32px;
+    float: left;
+}
+.sobakaname
+{
+    width: 70%;
+    margin-left: 40px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+.divsoc
+{
+    margin-bottom: 10px;
+}
+.adres
+{
+    width: 200px;
+    height: 190px;
+    padding-top: 20px;
+    margin-left: -100px;
+}
+.divsoc2 p
+{
+    height: 32px;
+    margin:  0 8px 10px 0 ;
+    line-height: 32px;
+}
+section
+{
+  padding-top: 160px;
+}
+@media screen and (max-width: 375px) {
+    section
+    {
+        padding-top: 120px;
+    }
+    .container_tovar
+    {
+        background-image: url(../img/svg/bgadapt3.svg);
+        max-width: 375px;
+        margin: 0px;
+        padding: 0px;
+        height: 950px;
+    }
+    .sometext
+    {
+        font-size: 16px;
+    }
+    .picture
+    {
+        flex-wrap: wrap;
+        margin-left: 0px;
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+    .description
+    {
+        align-items: center;
+        margin-left: 0px;
+    }
+    .cap
+    {
+        height: 200px;
+        width: 220px;
+    }
+    .back {
+        display: flex;
+        width: 250px;
+        height: 174px;
+        margin-left: 35%;
+        margin-top: -207px;
+        background-image: url(../img/svg/btn.svg);
+        background-repeat: no-repeat;
+        background-color: unset;
+        background-position: center;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-family: "MB Before the End";
+        font-size: 18px;
+        text-align: center;
+        background-size: 80%;
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 376px) and (max-width:768px)
+{
+  .picture
+  {
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .description
+  {
+      margin: auto;
+      padding: 0 50px;
+  }
+  .description p, h1
+  {
+    margin: auto;
+    display: inline;
+  }
+  .container_tovar
+  {
+    background-image: url(../img/svg/bgadapt2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1200px;
+    margin: auto;
+    background-size: 100%;
+}
+  .name
+  {
+    margin: auto;
+  }
+  section
+  {
+      padding-top: 100px;
+    height: 1200px;
+  }
+  footer
+  {
+      margin-top: 100px;
+  }
+  .back
+  {
+      margin-left: 60%;
+  }
+  
+}
+@media screen and (min-width: 769px) and (max-width: 1440px)
+{
+    .container_tovar
+  {
+    background-image: url(../img/svg/background.svg);
+  }
+    .back
+  {
+      margin-left: 70%;
+  }  
+}
+@media screen and (min-width: 1441px)
+{
+    .container_tovar
+  {
+    background-image: url(../img/svg/backgroundf.svg);
+  }
+}

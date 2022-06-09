@@ -1,0 +1,97 @@
+.offer{
+    padding-top: 70px;
+    background-image: url('../../img/jpg/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 870px;
+    position: relative;
+    overflow: hidden;
+}
+.offer_zag{
+    position: relative;
+    top: 120px;
+    left: 100px;
+    background-image: url('../../img/png/arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 300px;
+}
+.offer_zag h1{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    font-size: 54px;
+    color: white;
+}
+.offer_zag p{
+    font-family: 'MB Before The End';
+    position: relative;
+    left: 40px;
+    font-size: 32px;
+    color: white;
+}
+.transition_sections{
+    height: 500px;
+    position: absolute;
+    bottom: -380px;
+    width: 130%;
+    left: -250px;
+    transform: rotate(180deg);
+    background-image: url('../../img/png/mazok3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:1820px) {
+    .transition_sections{
+        bottom: -280px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .transition_sections{
+        left: -200px;
+    }
+    .offer_cont{
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .offer_zag{
+        position: static;
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .transition_sections{
+        left: -10px;
+    }
+    .offer_zag{
+        margin-top: 200px;
+        width: 620px;
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .offer{
+        background-image: url('../../img/png/back_mobile.png');
+        background-size: cover;
+        background-position: center center;
+    }
+    .offer_zag{
+        margin-top: 200px;
+        width: 90vw;
+        height: 100%;
+        font-size: 26px;
+        text-align: center;
+
+    }
+    .offer_zag h1{
+        margin-top: 10px;
+        left: 0px;
+    }
+    .offer_zag p{
+        left: 0px;
+    }
+}
