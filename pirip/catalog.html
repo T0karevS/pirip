@@ -27,26 +27,146 @@
         </div>
     </header>
     <section class="catalog">
+        <div class="menu_cat">
+            <div class="ssilki">
+            <a href="">кепки</a>
+            <a href="">футболки</a>
+            <a href="">рюкзаки</a>
+            <a href="">Брелки</a>
+            <a href="">браслеты</a>
+            <a href="">Инструменты</a>
+            <a href="">бижутерия</a>
+            </div>
+        </div>
         <div class="catback">
             <div class="search">
                 <input type="text" placeholder="введите для поиска">
             </div>
-            <div class="menu_cat">
-                <div class="ssilki">
-                <a href="">кепки</a>
-                <a href="">футболки</a>
-                <a href="">рюкзаки</a>
-                <a href="">Брелки</a>
-                <a href="">браслеты</a>
-                <a href="">Инструменты</a>
-                <a href="">бижутерия</a>
+           
+            <div class="kepki">
+                <div class="block_kepka l">
+                    <img src="img/png/kepka.png" alt="">
+                    <p>Кепка</p>
+                    <p>1200 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/acdcjacket.png" alt="">
+                    <p>Кожаная куртка | AC/DC</p>
+                    <p>12000 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/rammstein1.png" alt="">
+                    <p>Часы | Rammstein</p>
+                    <p>9000 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/kardigan.png" alt="">
+                    <p>Кардиган</p>
+                    <p>4200 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/bag.png" alt="">
+                    <p>Рюкзак</p>
+                    <p>7200 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/skillet.png" alt="">
+                    <p>Кепка | Skillet</p>
+                    <p>1200 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/shirt.png" alt="">
+                    <p>Рубашка</p>
+                    <p>1800 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/metallicajacket.png" alt="">
+                    <p>Куртка | Metallica</p>
+                    <p>14000 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/sabaton.png" alt="">
+                    <p>Футболка | Sabaton</p>
+                    <p>1200 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/slipknot.png" alt="">
+                    <p>Футболка | Slipknot</p>
+                    <p>1200 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/bagM.png" alt="">
+                    <p>Чемодан | Motorhead</p>
+                    <p>10000 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/boot2.png" alt="">
+                    <p>Ботинки</p>
+                    <p>7000 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/minecraft.png" alt="">
+                    <p>Футболка | Minecraft</p>
+                    <p>1200 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/boot1.png" alt="">
+                    <p>Ботинки</p>
+                    <p>6000 руб</p>
+                </div>
+                <div class="block_kepka l">
+                    <img src="img/png/samurai.png" alt="">
+                    <p>Футболка | Samurai</p>
+                    <p>1200 руб</p>
                 </div>
             </div>
-            <div class="kepki">
-            
-            </div>
-    </div>
+    </div>s
     </section>
-    <script src="js/menu.js"></script>
+    <script>
+        let menu = document.getElementById('menu');
+        let menu_nav = document.getElementById('menu_nav');
+        let logo = document.getElementById('logo');
+
+        menu.addEventListener('click', e => {
+            if(menu_nav.childNodes.length < 2){
+                setTimeout(e=>{
+                    menu_nav.innerHTML = `
+                    <div class="navigation_mobile">
+                            <a href="index.html" class="select">Главная</a>
+                            <a href="catalog.html">Каталог</a>
+                            <a href="Группы">Группы</a>
+                            <a href="Контакты">Контакты</a>
+                        </div>
+                        <div class="ssilki mob">
+                            <a href="">кепки</a>
+                            <a href="">футболки</a>
+                            <a href="">рюкзаки</a>
+                            <a href="">Брелки</a>
+                            <a href="">браслеты</a>
+                            <a href="">Инструменты</a>
+                            <a href="">бижутерия</a>
+                            </div>
+                        <div class="user">
+                            <a href="basket.html">Корзина</a>
+                            <a href="">Выход</a>
+                        </div>
+                    </div>
+                    `
+                }, 500)
+            }else{
+                menu_nav.innerHTML = '';
+            }
+            menu_nav.classList.toggle('visible');
+        });
+
+        document.onclick = function(e){
+            if(e.target.tagName != "SECTION"){
+                return;
+            }
+            if(menu_nav.classList[1] != undefined){
+                menu_nav.classList.remove('visible');
+            }
+        }
+    </script>
 </body>
 </html>

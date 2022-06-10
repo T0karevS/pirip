@@ -1,9 +1,10 @@
 .container_tovar
 {
     background-image: url(../img/svg/background.svg);
-    height: 978px;
+    padding: 60px;
+    padding-bottom: 200px;
     background-repeat: no-repeat;
-    background-size: 115%;
+    background-size: cover;
     background-position: top center;
     width: 100%;
 
@@ -11,17 +12,13 @@
 .picture
 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     padding-top: 110px;
     margin-left: 10%;
 }
-.arrows
-{
-    margin: 20px;
-}
 .cap
 {
-    width: 35%;
+   width: 500px;
 }
 .name
 {
@@ -64,11 +61,11 @@
     font-size: 36px;
     margin-top: 20px;
 }
-.useless_data
+.useless_data p
 {
     padding-top: 25px;
     color: white;
-    font-family: "MB Before the End";
+    font-family: "Philosopher";
     margin: auto;
     width: 80%;
     font-size: 36px;
@@ -141,15 +138,14 @@ section
 @media screen and (max-width: 375px) {
     section
     {
-        padding-top: 120px;
+        overflow: hidden;
+        padding-top: 150px;
     }
     .container_tovar
     {
-        background-image: url(../img/svg/bgadapt3.svg);
-        max-width: 375px;
         margin: 0px;
         padding: 0px;
-        height: 950px;
+
     }
     .sometext
     {
@@ -160,7 +156,7 @@ section
         flex-wrap: wrap;
         margin-left: 0px;
         justify-content: space-around;
-        padding-top: 30px;
+        padding-top: 60px;
     }
     .description
     {
@@ -173,11 +169,9 @@ section
         width: 220px;
     }
     .back {
-        display: flex;
+        right: 30px;
         width: 250px;
         height: 174px;
-        margin-left: 35%;
-        margin-top: -207px;
         background-image: url(../img/svg/btn.svg);
         background-repeat: no-repeat;
         background-color: unset;
@@ -193,7 +187,7 @@ section
         justify-content: space-around;
     }
 }
-@media screen and (min-width: 376px) and (max-width:768px)
+@media screen and (max-width:768px)
 {
   .picture
   {
@@ -203,31 +197,16 @@ section
   }
   .description
   {
+      text-align: center;
       margin: auto;
       padding: 0 50px;
   }
-  .description p, h1
-  {
-    margin: auto;
-    display: inline;
+  .sometext{
+      text-align: center;
   }
-  .container_tovar
-  {
-    background-image: url(../img/svg/bgadapt2.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1200px;
-    margin: auto;
-    background-size: 100%;
-}
   .name
   {
     margin: auto;
-  }
-  section
-  {
-      padding-top: 100px;
-    height: 1200px;
   }
   footer
   {
@@ -256,4 +235,27 @@ section
   {
     background-image: url(../img/svg/backgroundf.svg);
   }
+}
+@media screen and (max-width:980px) {
+    .container_tovar{
+        padding: 60PX 0px;
+        padding-bottom: 200PX;
+    }
+    .back{
+        position: absolute;
+        margin-left: 0px;
+        right: 50px;
+    }
+    .picture{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:480px) {
+    .cap{
+        width: 70%;
+    }
+    .sometext{
+        font-size: 22px;
+    }
+    
 }

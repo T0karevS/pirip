@@ -12,7 +12,7 @@
     justify-content: flex-end;
 }
 .menu_cont{
-    height: 1400PX;
+    height: 1700PX;
     width: 40%;
     overflow: hidden;
     position: absolute;
@@ -60,6 +60,11 @@
     text-align: center;
     color: white;
     font-size: 28px;
+    width: 250px;
+}
+.block_kepka p
+{
+    font-family: 'Philosopher';
 }
 
 @media screen and (max-width:1400px) {

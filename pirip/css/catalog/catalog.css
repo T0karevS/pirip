@@ -1,28 +1,38 @@
+header{
+    margin-bottom: 100px;
+}
 .catalog{
-    padding-top: 50px;
-    height: 1000px;
+    padding-bottom: 200px;
+    background-image: url('../../img/png/Group\ 55.svg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative;
+    width: 95%;
+    margin: 0px auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .c{
     position: static;
 }
 .catback{
+    
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('../../img/png/Group\ 56.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin: 0px auto;
 }
 .cat{
     padding: 0px 20px;
 }
 .menu_cat{
     height: 100%;
+    top: 0px;
     position: absolute;
     background-image: url('../../img/png/Кисть1\ 1.png');
     background-size: cover;
     width: 20%;
-    padding-top: 150px;
+    padding-top: 200px;
     padding-left: 30px;
 }
 .ssilki{
@@ -31,25 +41,211 @@
 }
 .ssilki a{
     font-size: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: red;
+}
+.mob{
+    display: none;
 }
 .search{
     position: absolute;
-    top: 20px;
-    right: 200px;
+    z-index: 1;
+    top: -30px;
+    right: 50px;
     background-image: url('../../img/png/мазок\ для\ поиска\ 1.png');
     background-size: 100%;
     background-repeat: no-repeat;
     padding-top: 48px;
     padding-left: 85px;
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 100px;
+    padding-bottom: 100px;
 }
 .search input{
     border: none;
     border-bottom: 1px solid white;
-    margin-top: 6px;
+    margin-top: 25px;
+    margin-left: 20px;
     padding-bottom: 6px;
+    font-style: 'MB Before The End';
     background-color: inherit;
+    width: 320px;
+    color: white;
+}
+.search input:focus{
+    outline: none;
+}
+.search input::placeholder{
+    color: white;
+}
+.kepki{
+    position: relative;
+    top: 150px;
+    left: 350px;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.block_kepka{
+    margin-right: 30px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    width: 230px;
+    height: 320px;
+}
+.block_kepka img
+
+.block_kepka:hover img{
+    cursor: pointer;
+    transition: 0.2s ease;
+    transform: scale(1.1);
+}
+.block_kepka:hover p{
+    cursor: pointer;
+    color: red;
+}
+.kepki p
+{
+    font-family: 'philosopher', sans-serif;
+}
+@media screen and (max-width:1750px) {
+    .kepki{
+        left: 250px;
+    }
+    
+}
+@media screen and (max-width:1345px) {
+    .kepki{
+        margin: 0px auto;
+    }
+}
+@media screen and (max-width:1220px) {
+   .catalog{
+       width: 100%;
+   }
+}
+@media screen and (max-width:1280px) {
+    .kepki{
+        margin: 0px 0px;
+    }
+}
+@media screen and (max-width:1050px) {
+    .search{
+        position: relative;
+        transform: rotate(-1deg);
+        top: 20px;
+        right: 0px;
+        margin: 0px auto;
+    }
+    .menu_cat{
+        position: relative;
+        top: 40px;
+        padding-top: 60px;
+        width: 100%;
+        height: 12%;
+        background-image: url('../../img/png/mobile_cat_menu.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .ssilki{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+    .kepki{
+        top: 0px;
+        left: 0px;
+        margin: 0px auto;
+        align-items: center;
+        justify-content: center;
+        max-width: 90%;
+    }
+    .block_kepka{
+        font-size: 18px;
+    }
+    .block_kepka img{
+        max-width: 200px;
+    }
+    .catalog{
+        background-position: center;
+    }
+}
+@media screen and (max-width:850px) {
+    .menu_cat{
+        padding-top: 40px;
+    }
+    .ssilki a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:680px) {
+    header{
+        margin-bottom: 30px;
+    }
+    .search{
+        top: -40px;
+    }
+    .menu_cat{
+        display: none;
+    }
+    .mob{
+        display: flex;
+    }
+    .visible a{
+        font-size: 36px;
+    }
+    .visible{
+        height: 430px;
+        width: 100%;
+    }
+    .ssilki{
+        margin-top: 30px;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .ssilki a{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    .kepki{
+       top: -50px;
+        max-width: 100%;
+    }
+    .block_kepka{
+        font-size: 16px;
+    }
+    .block_kepka img{
+        max-width: 150px;
+    }
+    .catalog{
+        padding-bottom: 30px;
+        overflow-y: visible;
+    }
+}
+@media screen and (max-width:550px) {
+    .visible{
+        height: 700px;
+    }
+}
+@media screen and (max-width:480px) {
+    .search{
+        background-image: none;
+        top: 0px;
+        width: 80%;
+        padding-left: 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transform: rotate(0deg);
+    }
+    .search input{
+        width: 100%;
+        
+        
+        margin-left: 0px;
+        font-size: 12px;
+    }
 }

@@ -12,13 +12,14 @@ body
 }
 section
 {
+  overflow: hidden;
   padding-top: 120px;
   max-width: 1700px;
   margin: auto;
   
 }
 .container{
-  
+  overflow: hidden;
   background-image: url(../img/png/bgreg.png);
   background-repeat: no-repeat;
   background-size: 98%;
@@ -30,6 +31,7 @@ section
 .registration__title{
   font-weight: 400;
   font-size: 64px;
+  text-align: center;
   line-height: 74px;
   color: #FFFFFF;
   margin-left: 100px;
@@ -105,7 +107,7 @@ section
 .checkbox__text
 {
   font-family: "MB Before the End";
-  font-size: 32px;
+  font-size: 22px;
   margin-left: 25px;
   width: 330px;
   margin-top: 10px;
@@ -177,22 +179,42 @@ footer
     margin:  0 8px 10px 0 ;
     line-height: 32px;
 }
+
+@media screen and (max-width:1410px) {
+  .container{
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (max-width:970px) {
+  .registration__item-content{
+    width: 700px;
+    max-width: 900px;
+    background-size: cover;
+  }
+  .registration__item-content::before{
+    background-image: none;
+    width: 0px;
+    height: 0px;
+  }
+  .registration__item-input{
+    width: 80%;
+    margin-left: 30px;
+  }
+  .buy{
+    background-size: contain;
+  }
+}
 @media screen and (max-width:768px)
 {
   .registration
   {
-    width: 768px;
     margin: auto;
     padding-left: 0px;
     padding-right: 0px;
   }
   .container
   {
-    background-image: url(../img/svg/bgadapt2.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1200px;
-    width: 768px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -234,26 +256,42 @@ footer
     border-bottom: 1px solid red;
   }
 }
+
+@media screen and (max-width:640px) {
+  .registration__item-content{
+    max-width: 500px;
+  }
+  .registration__item-input{
+    width: 80%;
+    height: 40px;
+    line-height: 38px;
+    font-size: 20px;
+    margin: 38px 0 50px -9px;
+    color: red;
+    outline: none;
+    border-bottom: 1px solid red;
+  }
+  .registration__item-input::placeholder{
+    font-size: 20px;
+  }
+  .checkbox__text{
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width:375px)
 {
-  .container
-  {
-    background-image: url(../img/svg/bgadapt3.svg);
-    max-width: 375px;
-    margin: 0px;
-    padding: 0px;  
-    height: 800px; 
-  }
   .registration__item-input {
     box-sizing: border-box;
-    width: 190px;
-    height: 16px;
+    width: 120%;
+    height: 20px;
+    padding-bottom: 5px;
     line-height: 18px;
     border: none;
     background: none;
     font-family: "MB Before the End";
     font-size: 18px;
-    margin: 30px 0 30px -30px;
+    margin: 30px 0 30px -60px;
     color: red;
     outline: none;
     border-bottom: 1px solid red;
@@ -285,5 +323,4 @@ footer
     margin-left: 12px;
     height: 100px;
   }
-
 }

@@ -1,0 +1,140 @@
+header{
+    position: static;
+    margin-bottom: 50px;
+}
+.groups{
+    padding-top: 150px;
+    max-width: 1900px;
+    margin: 0px auto;
+    background-image: url('../../img/png/background_gr.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    padding-bottom: 100px;
+    position: relative;
+}
+.search{
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    right: 55px;
+    background-image: url('../../img/png/мазок\ для\ поиска\ 1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 48px;
+    padding-left: 85px;
+    width: 500px;
+    height: 100px;
+    padding-bottom: 100px;
+}
+.group_block:hover{
+    cursor: pointer;
+    box-shadow: -4px -4px 4px rgba(255, 0, 0, 0.25), 4px 4px 4px rgba(255, 0, 0, 0.35);
+}
+.group_block:hover img{
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+.search input{
+    border: none;
+    border-bottom: 1px solid white;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding-bottom: 6px;
+    font-style: 'MB Before The End';
+    background-color: inherit;
+    width: 320px;
+    color: white;
+}
+.search input:focus{
+    outline: none;
+}
+.search input::placeholder{
+    color: white;
+}
+.groups_cont{
+    padding: 0px 20px;
+    margin: 0px auto;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 20px;
+}
+.group_block{
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: white;
+    border-radius: 15px;
+}
+.asking{
+    max-width: 200%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.greenday{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    max-height: 200%;
+}
+.tdg{
+    grid-column: 1/3;
+    max-width: 200%;
+    grid-row: 4/5;
+}
+@media screen and (max-width:980px) {
+    .group_block{
+        max-width: 340px;
+        max-height: 250px;
+    }
+    .groups_cont{
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .group_block img{
+        width: 90%;
+    }
+    .asking{
+        max-width: 200%;
+    }
+    
+    .greenday{
+        max-height: 200%;
+    }
+    .tdg{
+        max-width: 200%;
+    }
+}
+@media screen and (max-width:570px) {
+    header{
+        margin-bottom: 10px;
+    }
+    .groups{
+        padding-top: 50px;
+    }
+    .groups_cont{
+        gap: 10px;
+    }
+    .search{
+        padding-top: 0px;
+        padding-left: 0px;
+        position: static;
+        background: none;
+        width: 80%;
+    }
+    .group_block img{
+        width: 100%;
+        transform: scale(1.2);
+    }
+    .search input{
+        width: 100%;
+        border-bottom: 2px solid white;
+        font-size: 18px;
+    }
+}
